@@ -12,9 +12,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
-        <Stack.Screen name="Premium" component={Premium} options={{headerShown: false}}/>
-        <Stack.Screen name="Countries" component={Countries} options={{headerShown: false}}/>
+        <Stack.Screen name="Home" component={Home} options={{headerShown: false, animation: 'slide_from_left'}}/>
+        <Stack.Screen name="Premium" component={Premium} options={{headerShown: false, animation: 'slide_from_bottom'}}/>
+        <Stack.Screen name="Countries" component={Countries} options={{headerShown: false, animation: 'slide_from_right'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   )
